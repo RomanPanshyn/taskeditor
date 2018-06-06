@@ -11,7 +11,7 @@ class Home extends Controller
 			$status = '0';							    						
 			if (isset($_FILES['imageToUpload'])) 
 			{				
-				move_uploaded_file($_FILES['imageToUpload']['tmp_name'],"../public/img/" . $_FILES['imageToUpload']['name']);
+				move_uploaded_file($_FILES['imageToUpload']['tmp_name'],"img/" . $_FILES['imageToUpload']['name']);
 				$task = $taskModel->createTask($status, $_POST['name'], $_POST['email'], $_POST['text'], basename($_FILES['imageToUpload']['name']));
 			}
 		    if (isset($_POST['status']) && $_POST['status'] == '1')

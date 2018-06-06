@@ -39,7 +39,7 @@
 		echo '<p>Email: <span id="lefttaskemail">' . $alltasks[$currenttask]['email'] . '</span></p>';
 		echo '<p>Text: <span id="lefttasktext">' . $alltasks[$currenttask]['text'] . '</span></p>';
 		echo '<p>Image: <span id="lefttaskimage">' . $alltasks[$currenttask]['image'] . '</span></p>';
-		echo '<p><img src="../public/img/' . $alltasks[$currenttask]['image'] . '" alt="Task image" height="240" width="320"></p>';
+		echo '<p><img src="img/' . $alltasks[$currenttask]['image'] . '" alt="Task image" height="240" width="320"></p>';
 		echo '</div>';
 		$currenttask++;
 	}
@@ -56,7 +56,7 @@
 		echo '<p>Email: <span id="centertaskemail">' . $alltasks[$currenttask]['email'] . '</span></p>';
 		echo '<p>Text: <span id="centertasktext">' . $alltasks[$currenttask]['text'] . '</span></p>';
 		echo '<p>Image: <span id="centertaskimage">' . $alltasks[$currenttask]['image'] . '</span></p>';
-		echo '<p><img src="../public/img/' . $alltasks[$currenttask]['image'] . '" alt="Task image" height="240" width="320"></p>';
+		echo '<p><img src="img/' . $alltasks[$currenttask]['image'] . '" alt="Task image" height="240" width="320"></p>';
 		echo '</div>';
 		$currenttask++;
 	}
@@ -73,7 +73,7 @@
 		echo '<p>Email: <span id="righttaskemail">' . $alltasks[$currenttask]['email'] . '</span></p>';
 		echo '<p>Text: <span id="righttasktext">' . $alltasks[$currenttask]['text'] . '</span></p>';
 		echo '<p>Image: <span id="righttaskimage">' . $alltasks[$currenttask]['image'] . '</span></p>';
-		echo '<p><img src="../public/img/' . $alltasks[$currenttask]['image'] . '" alt="Task image" height="240" width="320"></p>';
+		echo '<p><img src="img/' . $alltasks[$currenttask]['image'] . '" alt="Task image" height="240" width="320"></p>';
 		echo '</div>';
 		$currenttask++;
 	}
@@ -160,7 +160,7 @@
 		<textarea id="text" name="text" placeholder="This is a basic programming task."></textarea>
 	</div>				
 	<div class="col-sm-3">
-		<label for="image">Image 320x240 ../public/img/*(jpg,gif,png) </label>
+		<label for="image">Image 320x240 img/*(jpg,gif,png) </label>
 		<input type="file" name="imageToUpload" id="imageToUpload">			
 	</div>
 	<div class="col-sm-1">			
@@ -282,7 +282,7 @@
                 return false;
 			}
 	} else {
-            alert("Please select a valid Image file 320x240 ../public/img/*(jpg,gif,png)");
+            alert("Please select a valid Image file 320x240 img/*(jpg,gif,png)");
             return false;
 	 }
  }
@@ -312,7 +312,7 @@
                 return false;
 			}
 	} else {
-            alert("Please select a valid Image file 320x240 ../public/img/*(jpg,gif,png)");
+            alert("Please select a valid Image file 320x240 img/*(jpg,gif,png)");
             return false;
 	 }	 
   });		

@@ -8,6 +8,6 @@ define('ASSET_ROOT',
 	str_replace(
 		$_SERVER['DOCUMENT_ROOT'],
 		'',
-		str_replace('\\', '/', dirname(__DIR__) . '/public')
+		str_replace('\\', '/', dirname(__DIR__) . '')
 	)
 	);
